@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(246, 246, 246);
+}
+.nav-bar {
+  top: 0;
+  cursor: pointer;
+  display: flex;
+  background-color: #f3d158;
+}
+.nav-list {
+  display: flex;
+  width: 90%;
+  align-items: center;
+}
+.nav-list li {
+  list-style: none;
+  padding: 10px 10px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  border-radius: 60rem;
+  color: #0e0d0d;
+  font-size: xx-large;
+  FONT-WEIGHT: inherit;
+}
+
+.nav-list li a:hover {
+  color: rgb(204, 33, 33);
+}
+.btn {
+  position: absolute;
+  font-size: 16px;
+    right: 4%;
+    height: 5%;
+    width: 10%;
+ 
+  background-color: #e46e46;
+  font-weight: bolder;
+}
+.btn:hover {
+  background-color: rgb(172, 231, 84);
+}
+h2 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 8rem;
+  padding: 3.5rem 4.5rem;
+  column-gap: 85px;
+  background: #9a5e4d;
+  background-position: 100px;
+  padding-top: 100px;
+}
+h1 {
+  text-align: center;
+}
+.card {
+  width: 80%;
+  height: 192px;
+  border-radius: 6px;
+  background-color:  rgb(203, 172, 78);
+  border: 3px #010101;
+  transition: 0.5s;
+
+}
+.card:hover {
+  box-shadow: 1px 8px 8px rgb(9, 8, 8);
+  border: 5px solid rgb(7, 6, 6);
+}
+.avatar {
+  border-radius: 234px;
+    padding: 4px 75px;
+}
+
+.card-des {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+.card-des h2 {
+  position: relative;
+  font-weight: 600;
+  font-size: 14;
+  color: black;
+  margin: 2px 0 0 0;
+}
+p{
+  margin: -2px;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  border-radius: 25%;
+  border: 5px solid rgb(5, 5, 5);
+  animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.base {
+  display: flex;
+  background-size: cover;
+  align-items: center;
+}
+
+.base .cot h3 {
+  position: absolute;
+  padding-top: 0px;
+  font-size: 50px;
+  margin-left: 30%;
+  margin-right: 25%;
+  color: rgb(7, 7, 7);
+  text-decoration: solid;
+  text-align: center;
+
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(-25rem);
+    color: rgb(248, 15, 229);
+  }
+  25% {
+    transform: translateY(20rem);
+    color: rgb(55, 194, 0);
+  }
+  50% {
+    transform: translate(25rem);
+    color: rgb(129, 72, 235);
+  }
+  75% {
+    transform: translateY(-9rem);
+    color: rgb(194, 55, 0);
+  }
+}
